@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter une Date</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container " style=" ">
+      
+        <a href="/index.html" class="mbt-3" style="float: right;"> <i class="fa-solid fa-door-open"style="color: #1270B0; font-size: 2rem; "></i></a>
+    
+        <form id="addDateForm">
+            <h1>Listes des courses</h1>
+            <div class="mb-3">
+ <input type="text" class="form-control" id="dateName" placeholder="Nom de la date" style="border: solid #D2B48C; border-radius: 0.5rem; font-weight: 500; font-size: 1.5rem;" required>
+            </div>
+            <div class="mb-3">
+ <input type="date" class="form-control" id="date" style="border: solid #D2B48C; border-radius: 0.5rem ;font-weight: 500; font-size: 1.5rem;" required >
+            </div>
+            <button type="submit" class="btn w-100" style="background-color: #1270B0; height: 3rem; color: #fff; font-weight: 500; font-size: 1.2rem;">Ajouter une course</button>
+        </form>
+        
+        
+    </div>
+    <div class="container">
+        <h2 class="mt-3">Dates les plus récentes</h2>
+        <ul id="dateList" class="p-2"></ul>
+    </div>
+  
+    <script type="module" src="date.js"></script>
+</body>
+</html>
