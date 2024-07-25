@@ -1,0 +1,59 @@
+.header {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bell-icon {
+    color: #4682B4;
+    font-size: 2.2rem;
+}
+
+.profile-img {
+    width: 3rem;
+    border-radius: 10rem;
+    border: solid #4682B4;
+}
+
+.search-container {
+    padding: 1rem;
+}
+
+.search-input {
+    font-weight: 4rem;
+}
+
+.search-addon {
+    background-color: #4682B4;
+    color: white;
+}
+
+.spacer {
+    height: 2rem;
+}
+
+.button-container {
+    padding: 1rem;
+}
+
+.custom-btn {
+    width: 100%;
+    border-radius: 0.75rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    border: solid #D2B48C;
+}
+
+.logout-btn {
+    min-height: 50vh; /* Assure que la hauteur minimale est la hauteur de la vue */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Aligne le contenu vers le bas */
+    align-items: flex-end;
+}
+
+.logout-icon {
+    font-size: 1.5rem;
+    color: #4682B4;
+}

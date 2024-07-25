@@ -1,0 +1,123 @@
+/* Styles pour les écrans mobiles (small devices) */
+body {
+    font-size: 14px;
+  }
+  .tete_phone{
+    align-items: center;
+  }
+  .tete_phone i {
+    color: #4682B4 ;
+    font-size: 2.2rem;
+  }
+  .tete_phone .photo_profile {
+     width: 3rem;
+     border-radius: 10rem ;
+     border: solid #4682B4;
+  }
+  
+  .Cont_all input {
+    font-weight: 4rem;
+  }
+
+  .Cont_all span {
+    background-color: #4682B4;
+  }
+
+.espace{
+ height: 2rem;
+}
+
+.twoButton button{
+    font-size:1.5rem; border:solid #D2B48C; 
+}
+.twoButton button:hover{
+    font-size:1.5rem; background-color: #4682B4; 
+    color: #fff;
+}
+#logoutBtn{
+    min-height: 2vh; /* Assure que la hauteur minimale est la hauteur de la vue */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Aligne le contenu vers le bas */
+    align-items: flex-end;
+}
+#logoutBtn i {
+    font-size: 2rem;
+     color: #4682B4;
+      display: flex; 
+      justify-content: end; 
+      align-items: end;
+}
+.img-entre{
+  margin: auto 00;
+  width: 25rem;
+  height: auto;
+}
+.bienvenue{
+  display: none;
+  font-family: 'Times New Roman', Times, serif;
+}
+.couvre-menu{
+  display: none;
+}
+  @media (min-width: 768px) {
+    /* Styles pour les écrans plus larges (tablettes et desktop) */
+    body {
+      font-size: 16px;
+    }
+  }
+  
+  @media (min-width: 80rem) {
+    /* Styles pour les grands écrans (desktop) */
+    body {
+      font-size: 18px;
+    }
+    .desktop{
+      display: flex;
+      justify-content: space-around;
+      padding: 00rem 05rem ;
+    }
+    .img-entre{
+      width: 30rem;
+      height: auto;
+    }
+    .bienvenue{
+      display: block;
+      font-size: 8rem;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    .couvre-menu{
+      display: block;
+      margin: 2rem;
+  }
+  .menu{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin:00  auto ;
+      width: 80%;
+      height: 4rem;
+      background-color:  #D2B48C ;
+      border-radius: 1rem;
+
+  }
+ .menu a{
+  color: rgb(70, 42, 4);
+      text-decoration: none; 
+      font-weight: bold;
+      font-size: 1.5rem;
+  }
+  .tete_phone{
+    display: none;
+  }
+  .Cont_all{display: none;}
+
+
+  .tete_phone i {
+  display: none;
+  }
+  .tete_phone .photo_profile {
+  display: none;
+  }
+  
+  }

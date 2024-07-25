@@ -4,40 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
+    <link rel="stylesheet" href="index.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="p-3 d-flex justify-content-between" style="align-items: center;">
-        <i class="fa-solid fa-bell" style="color: #4682B4 ; font-size: 2.2rem;"></i> <img src="/img/1693355856042-removebg-preview (1).png" alt="" style="width: 3rem; border-radius: 10rem ; border: solid #4682B4;">
+    <div class="couvre-menu"> 
+        <div class="menu" >
+      
+        <a href="/date/date.html">Nouveau</a>
+         <a href="/index.html">Accueil</a>
+            <a href="/date/liste_date.html">Liste</a>
+        
+        </div> 
     </div>
-    <div class="container  ">
-        <div class=" " style="height: 4;">
-            <div class="">
+    <div class="p-3 d-flex justify-content-between tete_phone" >
+        <i class="fa-solid fa-bell" ></i> <img src="/img/1693355856042-removebg-preview (1).png" class="photo_profile" alt="" >
+    </div>
+    <div class="container Cont_all ">
+        <div>
+            <div >
                 <div class="input-group " >
-                    <input type="text" class="form-control" style="font-weight: 4rem;" placeholder="Rechercher..." aria-label="Rechercher" aria-describedby="search-addon">
+                    <input type="text" class="form-control" placeholder="Rechercher..." aria-label="Rechercher" aria-describedby="search-addon">
                     <div class="input-group-append" >
-                        <span class="input-group-text " id="search-addon"style="background-color: #4682B4;" >
-                            <i class="fas fa-search"></i>
+                        <span class="input-group-text " id="search-addon" >
+                         <i class="fas fa-search"></i>
                         </span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="d-flex" style="height: 2rem;">  </div>
-    <div class="p-3">
-       <button id="ajouterliste" class="btn w-100 rounded-3 mb-3" style="font-size:1.5rem; border:solid #D2B48C; ">Ajouter une course  </button> 
-       <button id="voirliste" class="btn w-100 rounded-3 mb-3" style="font-size:1.5rem; border:solid #D2B48C; ">Voir les courses  </button> 
+    <div class="d-flex espace"> <!-- ESPACE --> </div>
+    <div class="desktop">
+    <img class="img-entre" src="https://img.freepik.com/free-vector/project-planning-abstract-illustration_335657-5039.jpg?t=st=1721902002~exp=1721905602~hmac=6ddccc04b9370a408c9c9e0d7252c2353be42d6dae8d52df4435c188d0cce486&w=740" alt="">
+   
+    <div class="p-3 twoButton">
+        <h1 class="bienvenue" >Bienvenue</h1>
+       <button id="ajouterliste" class="btn w-100 rounded-3 mb-3" >Ajouter une course  </button> 
+       <button id="voirliste" class="btn w-100 rounded-3 mb-3" >Voir les courses  </button> 
     </div>   
-       
-       <button id="logoutBtn" class="btn " style="  min-height: 50vh; /* Assure que la hauteur minimale est la hauteur de la vue */
-       display: flex;
-       flex-direction: column;
-       justify-content: flex-end; /* Aligne le contenu vers le bas */
-       align-items: flex-end;"><i class="fa-solid fa-right-from-bracket " style="font-size: 1.5rem; color: #4682B4; display: flex; justify-content: end; align-items: end;"></i></button>
+</div>
+       <button id="logoutBtn" class="btn"> <i class= "fa-solid fa-right-from-bracket" ></i> </button>
      <script type="module" src="script.js"></script>
     <script type="module" src="/auth/check-auth.js"></script>
     <script type="module" src="/auth/logout.js"></script>

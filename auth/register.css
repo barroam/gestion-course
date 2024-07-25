@@ -1,0 +1,100 @@
+/* Styles pour les écrans mobiles (small devices) */
+body {
+  font-size: 14px;
+}
+.center-img{
+  display: flex;
+  justify-content: center;
+  margin-top: -2.5rem;
+}
+.center-img img{
+  width: 90%;
+}
+.MainForm h2{
+  font-size: 1.5rem; 
+  margin-top: -2.5rem;
+}
+#MainForm div input {
+  border: solid #D2B48C;
+   height: 3rem;
+}
+#MainForm button{
+ background-color:#4682B4;
+  color: #fff; 
+  font-weight: 700;
+   height: 3rem;
+}
+p{
+  text-align: center;
+}
+p a{
+ text-decoration: none;
+ color: black;
+ font-size: 1.2rem;
+}
+button{
+ background-color:#4682B4;
+  color: #fff; 
+  font-weight: 700; 
+  height: 3rem; 
+}
+.textDesktop{
+  display: none;
+}
+@media (min-width: 768px) {
+  /* Styles pour les écrans plus larges (tablettes et desktop) */
+  body {
+    font-size: 16px;
+  }
+}
+
+@media (min-width:80rem) {
+  /* Styles pour les grands écrans (desktop) */
+  body {
+    font-size: 18px;
+  }
+}
+
+
+@media (min-width: 80rem) {
+  /* Styles pour les grands écrans (desktop) */
+
+ .desktopAll{
+    background-color: #F5F5DC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin:4rem;
+  }
+
+  .desktop {
+    background-color: #Ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    font-size: 18px;
+    border-radius: 1.2rem;
+    margin:00 auto;
+  }
+
+  .text{
+    display: none;
+  }
+
+  .center-img img{
+    margin: auto 00;
+    width: 31rem;
+    height: 31rem;
+  }
+
+  #MainForm{
+    background-color: #fff;
+    width: 30rem;
+    }
+
+    .textDesktop{
+      display: block;
+    }
+
+}

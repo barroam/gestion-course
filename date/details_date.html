@@ -4,35 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Détails de la Date</title>
+    <link rel="stylesheet" href="details.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
 </head>
 <body>
-    <div class="container">
-        <a href="/date/date.html" class="mbt-3" style="float: right;"> <i class="fa-solid fa-door-open"style="color: #1270B0; font-size: 2rem; "></i></a>
-        <form id="addProductForm">
-            <div class="mb-3">
-               <h1>Liste des produits</h1>
-                <input type="text" id="productName" class="form-control" placeholder="Nom du produit" 
-                style="border: solid #D2B48C; border-radius: 0.5rem; font-weight: 500; font-size: 1.5rem;"  required>
-            </div>
-            <div class="mb-3">
-               
-                <input type="number" id="productQuantity" class="form-control" placeholder="Quantité"
-                style="border: solid #D2B48C; border-radius: 0.5rem; font-weight: 500; font-size: 1.5rem;"  required>
-            </div>
-            <div class="mb-3">
-               
-                <input type="number" step="0.01" id="productPrice" class="form-control" placeholder="Prix" 
-                style="border: solid #D2B48C; border-radius: 0.5rem; font-weight: 500; font-size: 1.5rem;"  required>
-            </div>
-            <button type="submit" class="btn w-100" style="background-color: #1270B0; height: 3rem; color: #fff; font-weight: 500; font-size: 1.2rem;">Ajouter le produit</button>
-        </form>
-      <h1 class="p-1">Produits</h1>
-        <ul id="productList" class="list-group "></ul>
-    
+    <div class="couvre-menu"> 
+        <div class="menu" >
+        <a href="/date/date.html">Nouveau</a>
+         <a href="/index.html">Accueil</a>
+            <a href="liste_date.html">Liste</a>
+        </div> 
     </div>
+    <!-- menu fin -->
+    <div class="container"> 
+       <div class="desktop">       <img src="/img/Group 92.png" alt="">
+        <div>           
+            <div class="action-buttons">
+                <button id="editButton" class="btn" >
+                    <i class="fa-solid fa-pen-to-square" ></i> 
+                </button>
+                <button id="deleteButton" class="btn" >
+                    <i class="fa-solid fa-trash-can" ></i>
+                </button>
+                <a href="/date/date.html" class="btn"> 
+                    <i class="fa-solid fa-door-open" ></i>
+                </a>
+            </div>
+      
+      
+
+        <!-- Section de la date -->
+        <div id="dateSection">
+            <p id="dateName" class="h4">Nom de la date ici</p>
+            <p id="dateCreated" class="h4">Date de création ici</p>
+
+            <!-- Formulaire de modification de la date -->
+            <form id="editDateForm" class="m-1">
+                <input type="text" id="editDateName" placeholder="Nom de la date" class="form-control mb-2" required>
+                <button type="submit" class="btn btn-primary">Enregistrer</button>
+                <button type="button" id="cancelEditDate" class="btn btn-secondary">Annuler</button>
+            </form>
+        </div>
+
+        <!-- Formulaire d'ajout de produit -->
+        <form id="addProductForm" class="mb-4">
+            <div class="mb-3">
+        
+                <input type="text" id="productName" class="form-control" placeholder="Nom du produit" required>
+            </div>
+            <div class="mb-3">
+                <input type="number" id="productQuantity" class="form-control" placeholder="Quantité" required>
+            </div>
+            <div class="mb-3">
+                <input type="number" step="0.01" id="productPrice" class="form-control" placeholder="Prix" required>
+            </div>
+            <button type="submit" class="btn w-100" >Ajouter le produit</button>
+        </form>
+    </div>
+</div>
+        <h1>Liste des produits</h1>
+        <ul id="productList" class="container second"></ul>
+    </div>
+
     <script type="module" src="details_date.js"></script>
 </body>
 </html>

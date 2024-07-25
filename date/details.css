@@ -1,0 +1,143 @@
+/* Styles pour les écrans mobiles (small devices) */
+body {
+    font-size: 14px;
+  }
+  .container a{
+    float: right;
+  }
+  .container a i{
+color: #1270B0; font-size: 2rem;
+margin-top: 0.3rem;
+  }
+  .action-buttons {
+    display: flex;
+    justify-content: flex-end;    
+    float: right;
+}
+.action-buttons button {
+    font-size: 1rem;
+}
+.action-buttons #deleteButton{
+  color: #b81515; font-size: 2rem;
+}
+.action-buttons #editButton{
+  color: #1270B0; font-size: 2rem;
+}
+#editDateForm {
+    display: none;
+}
+
+
+.container form input {
+  border: solid #D2B48C;
+   border-radius: 0.5rem ;
+   font-weight: 500; 
+   font-size: 1.5rem;
+}
+.container form input:hover{
+background-color: #1270B0;
+border: none;
+color: #fff;
+}
+
+.container form button{
+border-radius: 0.5rem ;
+font-weight: 500; 
+font-size: 1.5rem;
+background-color: #1270B0;
+color: #fff;
+}
+.container form button:hover{
+background-color: #D2B48C;
+color: #fff;
+}
+.second a:hover{
+background-color: #D2B48C;
+}
+li{
+  margin: 00.5rem 00rem;
+ border-radius: 1rem ;
+}
+li:hover{
+  background-color: #D2B48C;
+}
+.desktop img {
+  display: none;
+}
+.couvre-menu{
+  display: none;
+}
+  @media (min-width: 768px) {
+    /* Styles pour les écrans plus larges (tablettes et desktop) */
+    body {
+      font-size: 16px;
+    }
+  }
+  
+  @media (min-width: 80rem) {
+    /* Styles pour les grands écrans (desktop) */
+    body {
+      font-size: 18px;
+    }
+  .desktop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .desktop img {
+    display: block;
+    width: auto;
+    height: 15.5rem;
+  }
+.desktop div a{
+  display: none;
+}
+  .desktop form{
+    width: 20rem;
+  }
+.container form input:hover{
+background-color: #1270B0;
+border: none;
+color: #fff;
+}
+
+.container form button{
+border-radius: 0.5rem ;
+font-weight: 500; 
+font-size: 1rem;
+background-color: #1270B0;
+color: #fff;
+}
+.container form input {
+  border: solid #D2B48C;
+   border-radius: 0.5rem ;
+   font-weight: 500; 
+   font-size: 1rem;
+
+}
+.ticket1{
+  display: flex;
+  justify-content: space-between;
+}
+.couvre-menu{
+  display: block;
+  margin: 2rem;
+}
+.menu{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin:00  auto ;
+  width: 80%;
+  height: 4rem;
+  background-color: #D2B48C ;
+  border-radius: 1rem;
+
+}
+.menu a{
+color: rgb(70, 42, 4);
+  text-decoration: none; 
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+  }

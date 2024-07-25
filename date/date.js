@@ -21,7 +21,7 @@ const auth = getAuth(app);
 window.addEventListener('DOMContentLoaded', (event) => {
     onAuthStateChanged(auth, user => {
         if (!user) {
-            window.location.href = 'login.html';
+            window.location.href = '/auth/login.html';
         } else {
             const addDateForm = document.getElementById('addDateForm');
             if (addDateForm) {
@@ -79,15 +79,13 @@ function displayDates(dates) {
         const li = document.createElement('li');
         li.className = 'list-group-item';
         li.innerHTML = `
-           
-              <a href="details_date.html?dateId=${date.id}" class="custom-link"
-        style="display:flex;flex-direction:column; border: solid #D2B48C; font-size: 1.2rem;
-        width: 100%; border-radius: 0.6rem; margin-bottom: 1rem; padding: 0.3rem; text-decoration: none;
-        color: inherit;">
-          <p style=" margin: 0;text-align:start;">${new Date(date.date).toLocaleDateString()}</p>
-            <p style=" margin: 0; text-align:end;">${date.name}</p>
-          
-        </a>
+            <a href="details_date.html?dateId=${date.id}" class="custom-link"
+            style="display:flex;justify-content:space-between; border: solid #D2B48C; font-size: 1.2rem;
+            width: 100%; border-radius: 0.6rem; margin-bottom: 1rem; padding: 0.3rem; text-decoration: none;
+            color: inherit;">
+                <p style="margin: 0; text-align:start;">${new Date(date.date).toLocaleDateString()}</p>
+                <p style="margin: 0; text-align:end;">${date.name}</p>
+            </a>
         `;
         dateList.appendChild(li);
     });

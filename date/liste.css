@@ -1,0 +1,50 @@
+/* Styles pour les écrans mobiles (small devices) */
+body {
+    font-size: 14px;
+  }
+  .first a{
+    float: right;
+  }
+  .couvre-menu{
+  display: none;
+}
+  .second a:hover{
+    background-color: #D2B48C;
+    }
+  @media (min-width: 768px) {
+    /* Styles pour les écrans plus larges (tablettes et desktop) */
+    body {
+      font-size: 16px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    /* Styles pour les grands écrans (desktop) */
+    body {
+      font-size: 18px;
+    }
+    .couvre-menu{
+      display: block;
+      margin: 2rem;
+  }
+  .menu{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin:00  auto ;
+      width: 80%;
+      height: 4rem;
+      background-color: #D2B48C ;
+      border-radius: 1rem;
+
+  }
+ .menu a{
+  color: rgb(70, 42, 4);
+      text-decoration: none; 
+      font-weight: bold;
+      font-size: 1.5rem;
+  }
+  .first a{
+   display: none;
+  }
+  }
