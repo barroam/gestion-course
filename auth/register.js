@@ -39,9 +39,9 @@ MainForm.addEventListener('submit', async (event) => {
       email: email
     });
     window.location.href = "/index.html";
-    alert('Inscription réussie !');
+   /* alert('Inscription réussie !');*/
   } catch (error) {
-    alert('Erreur lors de l\'inscription : ' + error.message);
+   /* alert('Erreur lors de l\'inscription : ' + error.message); */
     console.error('Code de l\'erreur :', error.code);
     console.error('Message de l\'erreur :', error.message);
   }

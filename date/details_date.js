@@ -55,7 +55,7 @@ onAuthStateChanged(auth, user => {
                     quantity: parseInt(productQuantity),
                     price: parseFloat(productPrice)
                 });
-                alert('Produit mis à jour avec succès');
+             /*   alert('Produit mis à jour avec succès'); */
                 currentProductId = null; // Réinitialiser currentProductId après la mise à jour
             } else {
                 // Ajouter un nouveau produit
@@ -66,7 +66,7 @@ onAuthStateChanged(auth, user => {
                     price: parseFloat(productPrice),
                     status: 'inactive'
                 });
-                alert('Produit ajouté avec succès');
+               /* alert('Produit ajouté avec succès'); */
             }
 
             resetForm();
@@ -90,9 +90,9 @@ onAuthStateChanged(auth, user => {
                         remove(dateRef).then(() => {
                             alert('Date supprimée avec succès');
                             window.location.href = '/index.html'; // Rediriger vers une autre page après suppression
-                        }).catch(error => {
+                        })/*.catch(error => {
                             console.error("Error deleting date:", error);
-                        });
+                        });*/
                     }
                 }
             }
@@ -104,7 +104,7 @@ onAuthStateChanged(auth, user => {
             const newDateName = document.getElementById('editDateName').value;
             const dateRef = ref(db, `users/${user.uid}/dates/${dateId}`);
             await update(dateRef, { name: newDateName });
-            alert('Date mise à jour avec succès');
+          /*  alert('Date mise à jour avec succès'); */
             document.getElementById('editDateForm').style.display = 'none';
             document.getElementById('dateName').textContent = newDateName;
         });
@@ -113,7 +113,7 @@ onAuthStateChanged(auth, user => {
         document.getElementById('cancelEditDate').addEventListener('click', () => {
             document.getElementById('editDateForm').style.display = 'none';
         });
-    }
+    }   resetForm();
 });
 
 // Fonction pour récupérer et afficher les informations de la date
@@ -127,9 +127,9 @@ function fetchDate(userId, dateId) {
         } else {
             console.log("Date not found");
         }
-    }).catch(error => {
-        console.error("Error fetching date:", error);
-    });
+    })/* .catch(error => {
+        console.error("Error fetching date:", error); 
+    }); */
 }
 
 // Fonction pour récupérer et afficher les produits
@@ -147,9 +147,9 @@ function fetchProducts(userId, dateId) {
         } else {
             console.log("No products available");
         }
-    }).catch(error => {
+    }) /* .catch(error => {
         console.error("Error fetching products:", error);
-    });
+    }); */
 }
 
 // Fonction pour afficher les produits
@@ -216,12 +216,12 @@ window.updateProductStatus = function(productId, currentStatus) {
     const productRef = ref(db, `users/${auth.currentUser.uid}/dates/${dateId}/products/${productId}`);
     update(productRef, { status: newStatus })
         .then(() => {
-            alert('Statut du produit mis à jour');
+          /*  alert('Statut du produit mis à jour'); */
             fetchProducts(auth.currentUser.uid, dateId);
         })
-        .catch(error => {
+       /* .catch(error => {
             console.error("Error updating product status:", error);
-        });
+        }); */
 };
 
 // Fonction pour supprimer un produit
@@ -229,10 +229,12 @@ window.deleteProduct = function(productId) {
     const productRef = ref(db, `users/${auth.currentUser.uid}/dates/${dateId}/products/${productId}`);
     remove(productRef)
         .then(() => {
-            alert('Produit supprimé avec succès');
+          /*  alert('Produit supprimé avec succès');*/
             fetchProducts(auth.currentUser.uid, dateId);
+        
         })
-        .catch(error => {
+       /* .catch(error => {
             console.error("Error deleting product:", error);
-        });
+        }); */
+
 };

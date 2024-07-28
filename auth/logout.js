@@ -23,8 +23,8 @@ logoutBtn.addEventListener('click', async () => {
     await signOut(auth);
     window.location.href = '/auth/login.html'; // Redirection après déconnexion
   } catch (error) {
-    alert('Erreur lors de la déconnexion : ' + error.message);
+  /*  alert('Erreur lors de la déconnexion : ' + error.message); 
     console.error('Code de l\'erreur :', error.code);
-    console.error('Message de l\'erreur :', error.message);
+    console.error('Message de l\'erreur :', error.message); */
   }
 });

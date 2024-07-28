@@ -32,8 +32,8 @@ LoginForm.addEventListener('submit', async (event) => {
     // Redirection ou autre action après connexion réussie
     window.location.href = "/index.html"; // Par exemple, rediriger vers une page tableau de bord
   } catch (error) {
-    alert('Erreur lors de la connexion : ' + error.message);
+  /*  alert('Erreur lors de la connexion : ' + error.message);
     console.error('Code de l\'erreur :', error.code);
-    console.error('Message de l\'erreur :', error.message);
+    console.error('Message de l\'erreur :', error.message); */
   }
 });

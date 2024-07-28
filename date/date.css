@@ -35,8 +35,16 @@ body {
  background-color: #D2B48C;
 }
 .couvre-menu{
-  display: none;
-}
+  display: none;}
+  .first_container .desc{
+display: none;
+  }
+  .first_container .desc p{
+    display: none;
+  }
+  .first_container .desc img {
+    display: none;
+  }
   @media (min-width: 768px) {
     /* Styles pour les écrans plus larges (tablettes et desktop) */
     body {
@@ -89,5 +97,5 @@ body {
       font-weight: bold;
       font-size: 1.5rem;
   }
-  
+
   }

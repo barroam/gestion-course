@@ -39,7 +39,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
                         date: date
                     });
 
-                    alert('Date ajoutée avec succès');
+                  /*  alert('Date ajoutée avec succès'); */
                     document.getElementById('dateName').value = '';
                     document.getElementById('date').value = '';
                     fetchRecentDates(userId);
@@ -66,9 +66,9 @@ function fetchRecentDates(userId) {
         } else {
             console.log("No data available");
         }
-    }).catch(error => {
+    }) /* .catch(error => {
         console.error("Error fetching data:", error);
-    });
+    }); */
 }
 
 // Fonction pour afficher les dates
